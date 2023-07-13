@@ -3,7 +3,7 @@ import SideBar from "../components/SideBar.astro";
 import Button from "../components/Button.astro";
 import Header from "../components/Header.astro";
 
-// const {title} = Astro.props;
+const {title} = Astro.props;
 ---
 
 <html lang="en">
@@ -11,7 +11,7 @@ import Header from "../components/Header.astro";
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>Portfolio Website Built with Astro</title>
+		<title>{title}</title>
 	</head>
 	<body class="min-h-screen min-w-screen">
 		<div class="bg-base-100 drawer lg:drawer-open">
