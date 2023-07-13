@@ -1,0 +1,32 @@
+---
+import SideBar from "../components/SideBar.astro";
+import Button from "../components/Button.astro";
+import Header from "../components/Header.astro";
+
+const { content } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{content.title}</title>
+	</head>
+	<body class="min-h-screen min-w-screen">
+		<div class="bg-base-100 drawer lg:drawer-open">
+      <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content bg-base-100">
+        <Header />
+        <div class="md:flex md:justify-center">
+          <main class="pt-10 p-6 max-w-3xl">
+						<slot />
+					</main>
+				</div>
+			</div>
+			<SideBar />
+		</div>
+	</body>
+	<script src="https://kit.fontawesome.com/bf0ad2dc10.js" crossorigin="anonymous"></script>
+	<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</html>

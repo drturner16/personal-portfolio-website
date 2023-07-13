@@ -1,0 +1,56 @@
+---
+// Component Imports
+import Button from '../components/Button.astro';
+import MainLayout from '../layouts/MainLayout.astro';
+import HorizontalCard from '../components/HorizontalCard.astro';
+
+import { Icon } from 'astro-icon';
+---
+
+<MainLayout content="Home">
+   <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Hey there 👋</div>
+    <div class="text-5xl font-bold">I'm Daniel Turner</div>
+    <div class="text-2xl py-3 font-semibold">Agile Project Manager, Scrum Master, Product Owner, and Budding Front End Developer</div>
+    <div class="py-2">
+      <text class="text-lg">
+        I am an Agile project manager who sees Software Development projects from inception to release. Also, I am a Front End Developer skilled in: <br />
+        <br />
+        <b>HTML, CSS, JavaScript, React, Astro, Tailwind, Bootstrap, and SQL.</b>
+      </text>
+    </div>
+    <div class="mt-8">
+      <a class="btn" href="#" target="_blank"> Let's connect!</a>
+      </a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">My latest projects {"</>"}</div>
+
+    <HorizontalCard 
+      title="Demo Project 1"
+      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      url="#"
+    />
+    <HorizontalCard 
+      title="Demo Project 2"
+      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      url="#"
+    />
+  </div>
+  <div class="divider"></div>
+
+   <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+
+    <HorizontalCard 
+      title="Demo Blog Post 1"
+      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      url="#"
+    />
+  </div>
+
+</MainLayout>
+

@@ -1,0 +1,109 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import TimeLineElement from "../components/TimeLine.astro";
+---
+
+<MainLayout content="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Daniel Turner</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    As an Agile Project Coordinator at Regional One Health's Center for Innovation, I lead a small agile team to manage multiple projects from inception to release, applying my skills in data analysis and quality management. I report directly to the Director of the Center for Innovation and work with multidisciplinary teams to complete projects as assigned, while also evaluating and improving department processes and procedures. <br/> <br/> I graduated with a Master of Science degree in Operations Management from the University of Arkansas, where I also obtained a certification in Project Management. I have a Bachelor of Arts degree in Public Administration from the University of Tennessee, Knoxville. I am passionate about learning new skills and applying them to solve real-world problems. I am also a certified Project Management Skills professional by Smartsheet. 
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Project Management Certification"
+      subtitle="2021 to 2022 at the University of Arkansas, Fayetteville, AR"
+    />
+    <TimeLineElement
+      title="Master of Science - Operations Management"
+      subtitle="2019 to 2022 at the University of Arkansas, Fayetteville, AR"
+    />
+    <TimeLineElement
+      title="Bachelor of Arts - Political Science, Public Administration and Public Policy"
+      subtitle="2012 to 2016 at the University of Tennessee, Knoxville, TN"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Agile Project Coordinator at the Center for Innovaiton"
+      subtitle="From 2022 to Present at Regional One Health, Memphis, TN"
+    >
+      As a lead Project Coordinator at Regional One Health's Center for Innovation, I manage a small agile team where I fill the roles of Product Owner, Scrum Master, Coach, and Mentor for many projects that I see from inception to release<br>
+      <p class="font-bold">Highlights:</p>
+      <li>Report directly to the Director of the Center for Innovation and work in multidisciplinary teams to help complete projects as assigned, while also evaluating department processes and procedures and suggesting improvements.</li>
+      <li>Lead an Agile development team as the Scrum Master and Product Owner to ensure projects are completed on time and to the highest quality, including creating and managing stories, tasks, and refinement of backlog (From 2022 to 2023: I helped implement a strategy to get the first iteration development time to 120 days or fewer).</li>
+      <li>Develop newsletters and engagement programs to increase brand/departmental awareness throughout the organization.</li><br>
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Operations Assistant at Mercy Hospital"
+      subtitle="From Jan 2021 to Jul 2021 at Mercy Hospital, St. Louis, MO"
+    >
+      As the Operations Assistant for the Behavioral Health Clinic at Mercy Hospital in St. Louis, I acted as the administrative and analytical expert for the Behavioral Health Nurse Manager and Nursing Director.<br>
+      <p class="font-bold">Highlights:</p>
+      <li>Utilize Excel and PowerPoint to source and interpret data through Dashboards and charts in order to give the Nurse Manager and Director accurate reports on clinic-wide productivity, position control, co-worker attendance, and various other reports.</li>
+      <li>Incorporate project management principles in undertaking special projects from clinic leadership and managers (2021: I single-handedly digitized 25% of the clinic's processes).</li>
+      <li>Report directly with leaders and multi-disciplinary teams to support daily clinic operations and achieve clinic objectives through creative solutions that are consistent with Mercy’s Mission and Values.</li><br>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Office Operations Manager at Turner Family Dentistry"
+      subtitle="From 2017 to 2021 at Turner Family Dentistry, Munford, TN"
+    >
+      As the Office Operations Manager for Turner Family Dentistry, I managed all business operations and process improvement initiatives for the office.<br>
+      <p class="font-bold">Highlights</p>
+      <li>Develop an online presence from the ground up and digitize customer outreach campaigns.</li>
+      <li>Incorporate a culture of continuous improvment by undertaking projects like improving insurance reimbursment rates by analyzing the reimbursement rates for each insurance carrier for our most submitted codes.</li>
+      <li>Make a website for the practice from scratch, and complete rebranding of the practice.</li><br>
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="https://www.credly.com/badges/eceebd0a-a78a-4910-999a-85911ea6d10a/public_url" target="_blank" class="hover:bg-base-300 rounded p-1"> SmartSheet Project Management Skills</a>
+    </li>
+    <li>
+      <a href="https://www.codecademy.com/profiles/drturner16/certificates/9eb0741e5ebef1f9f58a53bfac67d3a7" target="_blank" class="hover:bg-base-300 rounded p-1">Learn HTML</a>
+    </li>
+    <li>
+      <a href="#" target="_blank" class="hover:bg-base-300 rounded p-1">Front-End Engineer Career Path</a>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-4 columns-2 mx-auto gap-6">
+    <li>Agile Project Management</li>
+    <li>Scrum</li>
+    <li>Software Development Life Cycle</li>
+    <li>Kanban</li>
+    <li>Lean Startup</li>
+    <li>Lean Six Sigma</li>
+    <li>Design Thinking</li>
+    <li>Operations Management</li>
+    <li>Microsoft Excel</li>
+    <li>Microsoft Project</li>
+    <li>Visio</li>
+    <li>Jira and Confluence</li>
+    <li>SmartSheet</li>
+    <li>Figma</li>
+    <li>Web Development</li>
+  </ul>
+</MainLayout>

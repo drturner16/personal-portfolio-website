@@ -1,0 +1,24 @@
+---
+import SideBarFooter from "./SideBarFooter.astro";
+import SideBarMenu from "./SideBarMenu.astro";
+import Button from "./Button.astro";
+const { sideBarActiveItemID } = Astro.props;
+---
+
+<div class="drawer-side z-40">
+  <label for="my-drawer" class="drawer-overlay"></label>
+  <aside class="px-2 pt-2 h-screen min-h-full bg-base-200 text-base-content flex flex-col">
+    <div class="w-fit mx-auto mt-5 mb-6">
+      <a href="/">
+        <div class="avatar transition ease-in-out hover:scale-[102%] block m-auto">
+          <div class="w-[7rem]">
+            <img src="https://placehold.jp/3d4070/ffffff/150x150.png?text=Placeholder" alt="" class="mask mask-circle">
+          </div>
+        </div>
+      </a>
+    </div>
+    <SideBarMenu />
+    <SideBarFooter />
+    <Button>Press for Confetti</Button>
+  </aside>
+</div>

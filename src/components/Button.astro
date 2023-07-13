@@ -1,0 +1,29 @@
+---
+// Click button, get confetti!
+// Styled by Tailwind :)
+---
+
+<button
+	class="appearance-none py-2 px-4 bg-purple-500 text-white font-semibold rounded-lg shadow-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-75 mt-3 mb-3"
+>
+	<slot />
+</button>
+
+<script>
+	import confetti from 'canvas-confetti';
+	const button = document.body.querySelector('button');
+
+	if (button) {
+		button.addEventListener('click', () => confetti({
+			particleCount: 200,
+			spread: 120,
+			startVelocity: 50,
+			origin: {
+    		x: Math.random(),
+    		// since they fall down, start a bit higher than random
+    		y: Math.random() - 0.2
+  		}
+		}));
+	}
+
+</script>
