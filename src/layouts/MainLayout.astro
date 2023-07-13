@@ -15,17 +15,17 @@ const { content } = Astro.props;
 	</head>
 	<body class="min-h-screen min-w-screen">
 		<div class="bg-base-100 drawer lg:drawer-open">
-      <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-      <div class="drawer-content bg-base-100">
-        <Header />
-        <div class="md:flex md:justify-center">
-          <main class="pt-10 p-6 max-w-3xl">
+      			<input id="my-drawer" type="checkbox" class="drawer-toggle" />
+      			<div class="drawer-content bg-base-100">
+        			<Header />
+        			<div class="md:flex md:justify-center">
+         			 	<main class="pt-10 p-6 max-w-3xl">
 						<slot />
-					</main>
+	 			 	</main>
 				</div>
-			</div>
-			<SideBar />
-		</div>
+     			</div>
+     			<SideBar />
+  		 </div>
 	</body>
 	<script src="https://kit.fontawesome.com/bf0ad2dc10.js" crossorigin="anonymous"></script>
 	<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
